@@ -6,9 +6,9 @@ const app = express();
 const port = 8080;
 
 const client = new Client({
-  password: "root",
-  user: "root",
-  host: "postgres",
+  password: process.env.POSTGRES_PASSWORD,
+  user: process.env.POSTGRES_USER,
+  host: process.env.HOST,
 });
 
 app.use(express.static("public"));

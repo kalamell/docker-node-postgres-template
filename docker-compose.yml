@@ -24,7 +24,7 @@ services:
   # to  `host: "postgres"` that value is mapped on the network to the 
   # address of this container.
   postgres:
-    image: postgres:14.1-alpine
+    image: postgres:15-alpine3.17
     restart: always
     env_file:
       - .env
