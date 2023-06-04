@@ -34,14 +34,3 @@ app.get("/employees", async (req, res) => {
     console.log(`Example app listening at http://localhost:${port}`);
   });
 })();
-
-const myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("foo");
-  }, 300);
-  reject("oops");
-});
-
-myPromise.then(() => {
-  console.log("hello");
-});
